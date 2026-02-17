@@ -10,6 +10,7 @@ Seu objetivo é disponibilizar exemplos práticos e organizados que evidenciem a
 ##💻 Back-end
 
 ## 📸 Protótipos do Portfólio
+Veja também o protótipo no [Figman](https://www.figma.com/design/COAKgSRbRgsxiYsUZUZx69/Wireframe-Portif%C3%B3lio---m%C3%A9dia-fid-?node-id=0-1&t=RorW6WAPHX1OuVqd-1)
 Tela/Sessão | Protótipo
 ------------|-------
 HOME | <img width="360" height="400" alt="HOME PAGE" src="https://github.com/user-attachments/assets/a0150670-9575-4f79-a1ee-2338d641877e" />
