@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/HomePage/Home";
+import Contato from "./pages/Contato/Contato"
+import Habilidades from "./pages/Habilidades/Habilidades"
+import Sobre from "./pages/Sobre/Sobre"
+import Projetos from "./pages/Projetos/Projetos"
 
 import MainLayout from "./Layout/MainLayout"
 
@@ -9,7 +14,12 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element = {<MainLayout/>}>
-            
+          <Route index element ={<Home/>}/>
+          <Route path="/home" element = {<Home/>}/>
+          <Route path="/contato" element = {<Contato/>}/>
+          <Route path="/sobre" element = {<Sobre/>}/>
+          <Route path="/habilidades" element = {<Habilidades/>}/>
+          <Route path="/projetos" element = {<Projetos/>}/>
         </Route>
       </Routes>
     </Router>

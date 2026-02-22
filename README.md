@@ -1,13 +1,42 @@
-# 🏷️Portifólio
-Este repositório apresenta um portfólio profissional com projetos desenvolvidos para demonstrar habilidades em programação, desenvolvimento de sistemas e criação de interfaces.
+# 📝 Portfólio 
 
-Seu objetivo é disponibilizar exemplos práticos e organizados que evidenciem a aplicação de tecnologias modernas e boas práticas no desenvolvimento de soluções funcionais, facilitando o acesso de recrutadores e interessados aos trabalhos realizados.
+Este repositório contém o código-fonte do meu portfólio profissional desenvolvido para apresentar minha trajetória, habilidades técnicas, projetos e formas de contato.
+
+O objetivo do sistema é demonstrar, de forma prática e organizada, a aplicação de tecnologias modernas no desenvolvimento de interfaces web e integração com backend, seguindo boas práticas de arquitetura, componentização e organização de código.
+
+---
+ 🌐 Acesso ao Projeto
+
+🔗 **Site publicado:**   
+📂 **Repositório:** 
+
+---
 
 # 🛠 Tecnologias Utilizadas
 
 ## 💻 Front-end
-  
-## 💻 Back-end
+
+| Tecnologia | Descrição |
+|------------|----------|
+| React + Vite | Biblioteca JavaScript para construção de interfaces modernas |
+| React Router | Gerenciamento de rotas SPA |
+| CSS Modules | Estilização modular por componente |
+| i18next | Internacionalização (Português / Inglês) |
+| React Icons | Biblioteca de ícones |
+| Axios | Comunicação com API |
+
+---
+
+## 🐍 Back-end
+
+| Tecnologia | Descrição |
+|------------|----------|
+| Python | Linguagem utilizada no backend |
+| FastAPI | Framework para construção de APIs REST |
+| Uvicorn | Servidor ASGI |
+| SMTP / API de Email | Serviço para envio de mensagens do formulário |
+
+---
 
 ## 📸 Protótipos do Portfólio
 Veja também o protótipo no [Figman](https://www.figma.com/design/COAKgSRbRgsxiYsUZUZx69/Wireframe-Portif%C3%B3lio---m%C3%A9dia-fid-?node-id=0-1&t=RorW6WAPHX1OuVqd-1)

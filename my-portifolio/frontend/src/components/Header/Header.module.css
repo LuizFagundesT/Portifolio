@@ -1,0 +1,99 @@
+.header {
+  background-color: #1f1f1f; /* Preto total para o estilo Spotify */
+  padding: 1rem 2rem;
+  position: sticky; /* Faz o header fixar no topo ao rolar */
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #282828; /* Linha sutil de separação */
+}
+.logoDev{
+    margin-left: 6rem;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoDev h5 {
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  margin: 0;
+  cursor: default;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+/* Links Normais */
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 10px; 
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+/* 2. Ajuste nos Links Normais */
+.navLink {
+  color: #B3B3B3;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  
+  /* Padding reduzido: 6px em cima/baixo e 15px nas laterais */
+  padding: 6px 15px; 
+  border-radius: 500px;
+  /* Mantemos a borda transparente para evitar que o layout "pule" */
+  border: 2px solid transparent; 
+}
+
+.navLink:hover {
+  background-color: #1ED760;
+  color: #000000;
+  /* Opcional: um leve aumento visual sem deslocar os vizinhos */
+  transform: scale(1.02); 
+}
+
+/* Container de Idiomas */
+.langContainer {
+  display: flex;
+  gap: 10px;
+  border-left: 1px solid #282828;
+  padding-left: 20px;
+}
+
+.langContainer button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.langContainer button:hover {
+  transform: translateY(-3px); /* Flutua levemente */
+  filter: grayscale(0) brightness(1.2);
+}
+
+.langImg {
+  border-radius: 4px; /* Bandeiras levemente arredondadas ficam mais modernas */
+  filter: grayscale(0.4); /* Ficam discretas até o hover */
+  transition: filter 0.2s;
+}
+
+.langContainer button:hover .langImg {
+  filter: grayscale(0);
+}
