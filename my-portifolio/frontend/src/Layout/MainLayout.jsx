@@ -11,7 +11,7 @@ export default function MainLayout() {
           <Outlet /> {/* aqui o React Router renderiza o conteúdo da rota */}
         </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

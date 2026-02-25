@@ -1,13 +1,13 @@
 .header {
-  background-color: #1f1f1f; /* Preto total para o estilo Spotify */
+  background-color: #282828; 
   padding: 1rem 2rem;
-  position: sticky; /* Faz o header fixar no topo ao rolar */
+  position: sticky; 
   top: 0;
   z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #282828; /* Linha sutil de separação */
+  border-bottom: 1px solid #282828; 
 }
 .logoDev{
     margin-left: 6rem;
@@ -32,7 +32,7 @@
   align-items: center;
 }
 
-/* Links Normais */
+
 .navList {
   list-style: none;
   display: flex;
@@ -42,7 +42,7 @@
   align-items: center;
 }
 
-/* 2. Ajuste nos Links Normais */
+
 .navLink {
   color: #B3B3B3;
   text-decoration: none;
@@ -51,17 +51,17 @@
   transition: all 0.3s ease;
   display: inline-block;
   
-  /* Padding reduzido: 6px em cima/baixo e 15px nas laterais */
+  
   padding: 6px 15px; 
   border-radius: 500px;
-  /* Mantemos a borda transparente para evitar que o layout "pule" */
+  
   border: 2px solid transparent; 
 }
 
 .navLink:hover {
   background-color: #1ED760;
   color: #000000;
-  /* Opcional: um leve aumento visual sem deslocar os vizinhos */
+
   transform: scale(1.02); 
 }
 
@@ -84,16 +84,60 @@
 }
 
 .langContainer button:hover {
-  transform: translateY(-3px); /* Flutua levemente */
+  transform: translateY(-3px); 
   filter: grayscale(0) brightness(1.2);
 }
 
 .langImg {
-  border-radius: 4px; /* Bandeiras levemente arredondadas ficam mais modernas */
-  filter: grayscale(0.4); /* Ficam discretas até o hover */
+  border-radius: 4px; 
+  filter: grayscale(0.4); 
   transition: filter 0.2s;
 }
 
 .langContainer button:hover .langImg {
   filter: grayscale(0);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #1ED760;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbarBtns {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #121212;
+    width: 100%;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease;
+  }
+
+  .active {
+    transform: translateY(0);
+  }
+
+  .navList {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
 }

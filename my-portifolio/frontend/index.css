@@ -1,8 +1,21 @@
-* {
+/* RESET MODERNO */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-body {
+* {
   margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
   font-family: 'Work Sans', sans-serif;
+  background-color: #000; /* já combina com seu fundo */
 }

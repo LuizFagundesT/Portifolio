@@ -1,3 +1,14 @@
-.textoTeste{
-    background-color: aquamarine;
+.fundoLateralEsq{
+    background-color: #4B4B4B;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 460px;
+   
+}
+.fotodev{
+    position: absolute;
+    right:300px;
+    top: 50px;
 }
