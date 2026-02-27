@@ -20,7 +20,7 @@ export default function BackgroundCanvas() {
     const mouse = {
       x: null,
       y: null,
-      radius: 100,
+      radius: 250,
     };
 
     const handleMouseMove = (event) => {
