@@ -1,0 +1,73 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 30px;
+    background: #121212;
+    color: #ffffff;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* EFEITO SALTO */
+.form:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.form h2 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.box_name_email {
+    display: flex;
+    gap: 15px;
+}
+
+/* INPUT PADRÃO */
+.input_form {
+    flex: 1;
+    padding: 12px 14px;
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* FOCUS VERDE */
+.input_form:focus {
+    outline: none;
+    border-color: #1DB954;
+    box-shadow: 0 0 0 2px rgba(29, 185, 84, 0.3);
+}
+
+/* TEXTAREA */
+textarea.input_form {
+    min-height: 120px;
+    resize: none;
+}
+
+/* BOTÃO */
+button {
+    padding: 12px;
+    background: #1DB954;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* HOVER DO BOTÃO */
+button:hover {
+    background: #1ed760;
+    transform: scale(1.05);
+}

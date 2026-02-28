@@ -1,0 +1,24 @@
+.box_contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1{
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: rgba(245, 245, 245, 0.2) 0px 0px 6px, rgba(245, 245, 245, 0.15) 0px 0px 12px;
+    color: rgb(245, 245, 245);
+    margin: 0;
+
+}
+
+.text_contact {
+    margin: 0px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 1,5rem;
+    line-height: 1.75;
+    color: rgb(176, 176, 176);
+    padding-top: 8px;
+}

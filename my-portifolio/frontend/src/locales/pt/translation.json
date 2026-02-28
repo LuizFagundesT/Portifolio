@@ -5,5 +5,15 @@
     "skills": "Habilidades",
     "projects": "Projetos",
     "contact": "Contato"
-  }
+  },
+
+  "contato":{
+    "contato-title" : "Contato",
+    "contato-text" : "Gostou do que viu, me chame por um destes canais logotipo!"
+  },
+
+ "email": {
+  "enviaEmail": "Envie uma mensagem !"
+ }
+
 }

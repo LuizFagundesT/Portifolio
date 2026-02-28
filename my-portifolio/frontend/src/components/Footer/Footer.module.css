@@ -1,0 +1,155 @@
+/* Footer.module.css */
+
+.footerContainer {
+  background-color: #121212; /* Fundo preto profundo do Spotify */
+  color: #b3b3b3; /* Cor de texto padrão (cinza claro) */
+  padding: 60px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  border-top: 1px solid #282828; /* Uma linha tênue no topo */
+  margin-top: auto; /* Garante que ele vá para o fim no flexbox */
+  width: 100%;
+}
+/* No Footer.module.css */
+
+.content {
+  max-width: 1200px; /* Largura máxima para não esticar em telas grandes */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap; /* Para quebrar em telas menores */
+}
+
+/* --- Lado Esquerdo: Info do Dev --- */
+.devInfo {
+  flex: 1; /* Ocupa o espaço disponível */
+  min-width: 300px; /* Não fica muito estreito */
+}
+
+.devName {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff; /* Nome do dev em branco */
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #b3b3b3;
+  margin-bottom: 30px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #2a2a2a;
+  color: #1ed760; /* Verde Spotify */
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* --- Lado Direito: Conect-se --- */
+.connect {
+  min-width: 300px;
+}
+
+.connectTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.socialList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  gap: 15px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.socialLink:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+.icon {
+  font-size: 32px !important; /* Tamanho dos ícones */
+  color: #b3b3b3;
+}
+
+.socialLink:hover .icon {
+  color: #1ed760; /* Ícone fica verde no hover */
+}
+
+.linkText {
+  display: flex;
+  flex-direction: column;
+}
+
+.platformName {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.handle {
+  font-size: 12px;
+  color: #818181;
+}
+
+/* --- Barra Inferior --- */
+.bottomBar {
+  max-width: 1200px;
+  margin: 60px auto 0;
+  text-align: center;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #282828;
+  margin-bottom: 20px;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #818181;
+}
+
+/* --- Responsividade (Telas de Celular) --- */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .devInfo, .connect {
+    width: 100%;
+  }
+
+  .tags {
+    justify-content: center;
+  }
+
+  .socialLink {
+    justify-content: center;
+  }
+}

@@ -4,14 +4,17 @@ import { Outlet } from "react-router-dom";
 
 export default function MainLayout() {
   return (
-    <div className="d-flex flex-column min-vh-100">
+    /* Removi 'min-vh-100' e 'd-flex' do container pai */
+    <div>
       <Header />
-      <main className="flex-grow-1 d-flex justify-content-center align-items-start py-4">
-        <div className="container-fluid px-3">
-          <Outlet /> {/* aqui o React Router renderiza o conteúdo da rota */}
-        </div>
-      </main>
-      {/* <Footer /> */}
+
+      {/* O main agora ocupa o espaço que o conteúdo pedir */}
+      <main className="py-4" style={{ minHeight: "100vh" }}>
+        {/* Isso força o meio da página a ser 50% maior que a tela */}
+        <Outlet />
+      </main> 
+
+      <Footer />
     </div>
   );
 }
