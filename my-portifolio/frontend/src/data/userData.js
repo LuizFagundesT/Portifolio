@@ -1,5 +1,5 @@
 // import profileImg from "../assets/";
-// import curriculo from "../assets/curriculo.pdf";
+import curriculo from "../assets/curriculo.pdf";
 
 export const userData = {
   name: "Luiz Gustavo F. Teixeira",
@@ -16,7 +16,7 @@ export const userData = {
   },
 
   telefone: "+5531984619823",
-  // curriculo,
+  curriculo,
 
   caracteristicas: [
     "user.Engenharia De Software",
