@@ -1,9 +1,9 @@
-import profileImg from "../assets/perfil.png";
+// import profileImg from "../assets/";
 // import curriculo from "../assets/curriculo.pdf";
 
 export const userData = {
   name: "Luiz Gustavo F. Teixeira",
-  img: profileImg,
+  img: "",
   desc: "user.desc",
   emailName: "luizagustinho032@gmail.com",
   linkedinName: "luiz-gustavo-fagundes-teixeira",
@@ -19,9 +19,10 @@ export const userData = {
   // curriculo,
 
   caracteristicas: [
-    "user.fullstack",
-    "user.backend",
+    "user.Engenharia De Software",
+    "user.SpringBoot",
     "user.ai",
-    "user.software"
+    "user.software",
+    "user.Python"
   ]
 };

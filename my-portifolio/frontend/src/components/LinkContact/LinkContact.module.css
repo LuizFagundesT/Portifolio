@@ -1,0 +1,66 @@
+.externalLink {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.containerLinkContato {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.05); /* Efeito sutil de transparência */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    margin-bottom: 0; /* O gap do pai já cuida do espaçamento */
+    width: 100%;      /* Faz o botão ocupar a largura do linksWrapper */
+    min-height: 70px; /* Mantém uma altura consistente */
+}
+
+/* EFEITO DE HOVER ESTILO SPOTIFY */
+.containerLinkContato:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(8px); /* Desloca levemente para o lado em vez de subir */
+    border-color: #1DB954; /* Borda verde no hover */
+}
+
+.iconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1DB954; /* Ícone sempre verde */
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.containerLinkContato:hover .iconWrapper {
+    transform: scale(1.2); /* Ícone cresce no hover */
+}
+
+.linkInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.attribute {
+    font-size: 13px;
+    color: #b3b3b3; /* Cinza claro do Spotify */
+    margin-top: 2px;
+    transition: color 0.3s ease;
+}
+
+.containerLinkContato:hover .attribute {
+    color: #ffffff; /* O texto fica branco puro no hover */
+}
+

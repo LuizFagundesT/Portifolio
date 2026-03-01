@@ -1,6 +1,6 @@
 import stylesHome from './Home.module.css';
 import BackgroundCanvas from '../../components/BackgroundCanvas';
-import perfil from '../../assets/logoLgQuad.svg'; 
+// import perfil from '../../assets/logoLgQuad.svg'; 
 import Typewriter from 'typewriter-effect';
 import { userData } from '../../data/userData'; // Puxando seu nome e dados
 import DownloadIcon from '@mui/icons-material/Download';
@@ -41,11 +41,11 @@ export default function Home() {
         </div>
 
         {/* LADO DIREITO: Barra Lateral que encosta no topo/fundo */}
-        <aside className={stylesHome.sidebar}>
+        {/* <aside className={stylesHome.sidebar}>
           <div className={stylesHome.fotoContainer}>
              <img src={perfil} alt="Logo LG" className={stylesHome.perfilImg} />
           </div>
-        </aside>
+        </aside> */}
       </div>
     </section>
   );

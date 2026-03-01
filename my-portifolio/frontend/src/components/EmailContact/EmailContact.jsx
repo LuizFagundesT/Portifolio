@@ -1,15 +1,20 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import styleEmailContact from "../EmailContact/EmailContact.module.css";
+import emailjs from "@emailjs/browser";
 
 export default function EmailContact() {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
+
   const [form, setForm] = useState({
     nome: "",
     email: "",
     telefone: "",
     mensagem: ""
   });
+
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
 
   function handleChange(e) {
     setForm({
@@ -18,17 +23,46 @@ export default function EmailContact() {
     });
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    console.log(form);
+    setLoading(true);
+    setStatus("");
+
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_EMAIL_SERVICE,
+        import.meta.env.VITE_EMAIL_TEMPLATE,
+        {
+          name: form.nome,
+          time: form.email,
+          telefone: form.telefone,
+          message: form.mensagem
+        },
+        import.meta.env.VITE_EMAIL_PUBLIC
+      );
+
+      setStatus("Email enviado com sucesso!");
+      setForm({
+        nome: "",
+        email: "",
+        telefone: "",
+        mensagem: ""
+      });
+
+    } catch (error) {
+      console.error(error);
+      setStatus("Erro ao enviar email.");
+    }
+
+    setLoading(false);
   }
 
   return (
-    <form 
-      className={styleEmailContact.form} 
+    <form
+      className={styleEmailContact.form}
       onSubmit={handleSubmit}
     >
-      <h2> {t("email.enviaEmail")} </h2>
+      <h2>{t("email.enviaEmail")}</h2>
 
       <div className={styleEmailContact.box_name_email}>
         <input
@@ -38,6 +72,7 @@ export default function EmailContact() {
           value={form.nome}
           onChange={handleChange}
           className={styleEmailContact.input_form}
+          required
         />
 
         <input
@@ -47,10 +82,11 @@ export default function EmailContact() {
           value={form.email}
           onChange={handleChange}
           className={styleEmailContact.input_form}
+          required
         />
       </div>
 
-      <input 
+      <input
         type="tel"
         name="telefone"
         placeholder="Telefone"
@@ -65,15 +101,18 @@ export default function EmailContact() {
         value={form.mensagem}
         onChange={handleChange}
         className={styleEmailContact.input_form}
+        required
       />
 
-      <button 
-        type="submit" 
+      <button
+        type="submit"
         className={styleEmailContact.button}
+        disabled={loading}
       >
-        Enviar
+        {loading ? "Enviando..." : "Enviar"}
       </button>
 
+      {status && <p>{status}</p>}
     </form>
   );
 }
